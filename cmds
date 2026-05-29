@@ -1,0 +1,301 @@
+# commands.md
+
+# Git Commands Guide
+
+## clone
+
+Copies a remote repository to your local computer.
+
+### Syntax
+
+```bash
+git clone <repository-url>
+```
+
+### Example
+
+```bash
+git clone https://github.com/user/project.git
+```
+
+---
+
+## checkout
+
+Switches between branches or restores files.
+
+### Syntax
+
+```bash
+git checkout <branch-name>
+```
+
+### Example
+
+```bash
+git checkout main
+```
+
+---
+
+## -b
+
+Used with `git checkout` to create a new branch and switch to it immediately.
+
+### Syntax
+
+```bash
+git checkout -b <new-branch-name>
+```
+
+### Example
+
+```bash
+git checkout -b feature-login
+```
+
+---
+
+## status
+
+Shows the current state of the repository, including modified and untracked files.
+
+### Syntax
+
+```bash
+git status
+```
+
+### Example
+
+```bash
+git status
+```
+
+---
+
+## push
+
+Uploads local commits to a remote repository.
+
+### Syntax
+
+```bash
+git push
+```
+
+### Example
+
+```bash
+git push origin main
+```
+
+---
+
+## -u
+
+Sets the upstream branch when pushing.
+
+### Syntax
+
+```bash
+git push -u origin main
+```
+
+### Example
+
+```bash
+git push -u origin feature-branch
+```
+
+---
+
+## pull
+
+Fetches and merges changes from a remote repository into the current branch.
+
+### Syntax
+
+```bash
+git pull
+```
+
+### Example
+
+```bash
+git pull origin main
+```
+
+---
+
+## add
+
+Adds files to the staging area before committing.
+
+### Syntax
+
+```bash
+git add <file-name>
+```
+
+### Example
+
+```bash
+git add README.md
+```
+
+To add all files:
+
+```bash
+git add .
+```
+
+---
+
+## commit
+
+Saves staged changes to the local repository.
+
+### Syntax
+
+```bash
+git commit
+```
+
+### Example
+
+```bash
+git commit -m "Added new feature"
+```
+
+---
+
+## -m
+
+Adds a commit message directly from the command line.
+
+### Syntax
+
+```bash
+git commit -m "message"
+```
+
+### Example
+
+```bash
+git commit -m "Fixed login bug"
+```
+
+---
+
+## -a
+
+Automatically stages tracked files before committing.
+
+### Syntax
+
+```bash
+git commit -a
+```
+
+### Example
+
+```bash
+git commit -a -m "Updated documentation"
+```
+
+---
+
+## -am
+
+Combines the `-a` and `-m` flags to stage tracked files and add a commit message in one command.
+
+### Syntax
+
+```bash
+git commit -am "message"
+```
+
+### Example
+
+```bash
+git commit -am "Refactored code"
+```
+
+---
+
+## branch
+
+Lists, creates, or deletes branches.
+
+### Syntax
+
+```bash
+git branch
+```
+
+### Example
+
+```bash
+git branch
+```
+
+To create a branch:
+
+```bash
+git branch new-feature
+```
+
+---
+
+## branch -a
+
+Displays all local and remote branches.
+
+### Syntax
+
+```bash
+git branch -a
+```
+
+### Example
+
+```bash
+git branch -a
+```
+
+---
+
+## branch -d
+
+Deletes a branch.
+
+### Syntax
+
+```bash
+git branch -d <branch-name>
+```
+
+### Example
+
+```bash
+git branch -d old-feature
+```
+
+---
+
+## merge
+
+Combines changes from one branch into another.
+
+### Syntax
+
+```bash
+git merge <branch-name>
+```
+
+### Example
+
+```bash
+git merge feature-login
+```
